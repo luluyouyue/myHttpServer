@@ -1,12 +1,12 @@
 if (EPOLL_EXISTS)
     set(server_lib
-        eventLoop.cpp
+            reactor.cpp
         tcpServer.cpp
         epollDispatcher.cpp
         )
 else ()
     set(server_lib
-        eventLoop.cpp
+            reactor.cpp
         tcpServer.cpp
         epollDispatcher.cpp
         )
