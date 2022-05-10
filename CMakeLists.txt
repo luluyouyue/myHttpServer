@@ -1,8 +1,5 @@
-cmake_minimum_required(VERSION 3.5)
-project(MyHttpServer)
+add_executable(http_server01 http_server01.c)
+target_link_libraries(http_server01 yolanda)
 
-set(CMAKE_CXX_STANDARD 11)
-
-add_executable(MyHttpServer main.cpp)
-
-add_subdirectory(lib/)
+add_executable(http_server_test http_server_test.c)
+target_link_libraries(http_server_test yolanda)
